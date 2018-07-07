@@ -3,6 +3,8 @@
     width: 300px;
     background-color: lightblue;
     padding: 10px;
+    left: -280px;
+    position: absolute;
 }
 
 .form-style-1 {
