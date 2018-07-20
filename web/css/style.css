@@ -1,3 +1,15 @@
+.submenu1, .submenu3 {
+    width: 400px;
+    background-color: lightgreen;
+}
+.submenu1 ul, .submenu2 ul, .submenu3 ul {
+    margin: 0px;1
+}
+.submenu2 {
+    width: 400px;
+    background-color: lightblue;
+}
+
 .rectangle-menu {
     height: 150px;
     width: 300px;
