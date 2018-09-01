@@ -24,5 +24,22 @@
     bez konieczności wciskania przycisku.
 </p>
 
+<script>
+    function changeColour2() {
+        var tags = document.getElementsByTagName("body");
+        var  c = document.getElementById("color").value;
+        tags[0].style="background-color: " + c;
+    }
+</script>
+<!--
+deklarowanie funkcji JS
+function name() {
+}
+pobieranie tagów
+document.getElementsByTagName("body")
+
+
+-->
+
 </body>
 </html>
