@@ -20,17 +20,6 @@
 <input type="text" id="param2"/>
 <input type="button" value="Policz" onclick="calc()"/>
 <div>Wynik: <span id="result"></span></div>
-<script>
-    function calc() {
-        var element1 = document.getElementById("param1");
-        var element2 = document.getElementById("param2");
-        var result = eval(element1.value+operator+element2.value);
-        var resultTag = document.getElementById("result");
-        resultTag.innerHTML = result;
-    }
 
-
-
-</script>
 </body>
 </html>
