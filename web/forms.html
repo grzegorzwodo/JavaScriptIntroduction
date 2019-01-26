@@ -27,29 +27,30 @@
     </ul>
 </p>
 
-
-<ul class="form-style-1">
-    <li><label>Imię i nazwisko<span class="required">*</span></label>
-        <input id="nn" type="text" name="name" onInput="validateNameOrSurname(this)" class="field-divided error" placeholder="Imię" />&nbsp;<input onInput="validateNameOrSurname(this)" type="text" name="surname" class="field-divided error" placeholder="Nazwisko" /></li>
-    <li>
-        <label>Email <span class="required">*</span></label>
-        <input type="email" name="email" onchange="validateEmailAddress(this)" class="field-long error" />
-    </li>
-    <li>
-        <label>Ulica</label>
-        <input type="text" name="street" onchange="validateStreet(this)" class="field-long error" />
-    </li>
-    <li>
-        <label>Kod pocztowy</label>
-        <input type="text" name="field4" onchange="validatePostalCode(this)" class="field-long error" />
-    </li>
-    <li>
-        <label>Miasto</label>
-        <input type="text" name="city" disabled="disabled" class="field-long" />
-    </li>
-    <li>
-        <input type="submit" value="Submit" />
-    </li>
-</ul>
+<form onsubmit="return canIsendForm()">
+    <ul class="form-style-1">
+        <li><label>Imię i nazwisko<span class="required">*</span></label>
+            <input id="nn" type="text" name="name" onInput="validateNameOrSurname(this)" class="field-divided error" placeholder="Imię" />&nbsp;<input onInput="validateNameOrSurname(this)" type="text" name="surname" class="field-divided error" placeholder="Nazwisko" /></li>
+        <li>
+            <label>Email <span class="required">*</span></label>
+            <input type="email" name="email" onchange="validateEmailAddress(this)" class="field-long error" />
+        </li>
+        <li>
+            <label>Ulica</label>
+            <input type="text" name="street" onchange="validateStreet(this)" class="field-long error" />
+        </li>
+        <li>
+            <label>Kod pocztowy</label>
+            <input type="text" name="field4" onchange="validatePostalCode(this)" class="field-long error" />
+        </li>
+        <li>
+            <label>Miasto</label>
+            <input type="text" name="city" disabled="disabled" class="field-long" />
+        </li>
+        <li>
+            <input type="submit" value="Submit" />
+        </li>
+    </ul>
+</form>
 </body>
 </html>

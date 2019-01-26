@@ -1,9 +1,10 @@
 $(document).ready(function(){
-    $(".rectangle-menu").hover(function(){
+    $(".rectangle-menu").mouseenter(function(){
         $(this).stop();
-        $(this).animate({left: '0px'});
-    }, function(){
+        $(this).animate({left: 0}, 1000);
+    });
+    $(".rectangle-menu").mouseleave(function(){
         $(this).stop();
-        $(this).animate({left: '-280px'});
+        $(this).animate({left: -280}, 1000);
     });
 });
