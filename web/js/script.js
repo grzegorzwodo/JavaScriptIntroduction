@@ -1,3 +1,6 @@
 function changeColor(color) {
-    console.log(color);
-}
+     console.log(color);
+ }
+
+ function changeColorOnClick() {
+ }
